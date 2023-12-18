@@ -11,11 +11,14 @@
 </head>
 
 <body class="bg-black">
-  <div id="main" class="container">
-    <div class="row h-100">
-      <div class="col-4 bg-primary">
+  <!-- main content container -->
+  <div id="main" class="container my-5">
+    <div class="row">
+      <!-- side navigation bar : left side -->
+      <div id="left" class="col-4 border-right border-light">
         <h1 class="text-center text-light">vi/null</h1>
-        <div class="h-25 bg-info d-flex justify-content-center align-items-center">
+        <!-- navigation links using list -->
+        <div class="h-25 d-flex justify-content-center align-items-center">
           <ul class="text-center list-unstyled text-light">
             <li class="m-1">shop</li>
             <li class="m-1">about</li>
@@ -23,19 +26,26 @@
             <li class="m-1">profile</li>
           </ul>
         </div>
-        <div class="bg-secondary d-flex justify-content-center align-items-end p-3">
+<!-- settings icon : doesnt align end and any height adjustments extends beyond div its contained in -->
+        <div class="bg-info d-flex justify-content-center align-items-end p-3">
           <img id="settings-icon" height="30" src="./static/gear-icon.png" alt="settings">
         </div>
       </div>
-      <div class="col-8 bg-danger">
-        <div class="row">
-          <div class="col-10 text-center my-5">
-            <h1>shop</h1>
-          </div>
-          <div class="col-2 text-end">
-            <p>cart</p>
+      <!-- main store content container : right side -->
+      <div id="right" class="col-8">
+        <div class="row justify-content-end">
+          <div class="col-2 text-end text-light">
+            <!-- checkout cart -->
+            <p>cart: 0</p>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-10 text-center my-5 text-light">
+            <!-- shop header text -->
+            <h1>shop</h1>
+          </div>
+        </div>
+        <!-- row holding 4 album products -->
         <div class="row h-25">
           <div class="col-3 text-center text-light">
             <img src="./static/cover-1.png" alt="album cover" height="150">
@@ -58,6 +68,7 @@
             <button class="btn btn-light">add to cart</button>
           </div>
         </div>
+        <!-- row holding 4 album products -->
         <div class="row h-25 my-5">
           <div class="col-3 text-center text-light">
             <img src="./static/cover-1.png" alt="album cover" height="150">
@@ -80,6 +91,7 @@
             <button class="btn btn-light">add to cart</button>
           </div>
         </div>
+        <!-- row holding 4 album products -->
         <div class="row h-25 my-5">
           <div class="col-3 text-center text-light">
             <img src="./static/cover-1.png" alt="album cover" height="150">

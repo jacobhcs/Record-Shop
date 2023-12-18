@@ -5,10 +5,17 @@
 }
 
 #main {
-  height: 850px !important;
+  height: 1050px !important;
 }
 
 #logo {
   font-size: 300%;
   font-weight: bold;
+}
+
+#left {
+  border: solid white 4px;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
 }
