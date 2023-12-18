@@ -8,14 +8,27 @@
   height: 1050px !important;
 }
 
-#logo {
+h1 {
+  cursor: pointer;
+}
+
+/* #logo {
   font-size: 300%;
   font-weight: bold;
-}
+  cursor: pointer;
+} */
 
 #left {
   border: solid white 4px;
   border-left: none;
   border-bottom: none;
   border-top: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+#settings-icon {
+  cursor: pointer;
 }
