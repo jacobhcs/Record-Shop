@@ -13,12 +13,6 @@ h1 {
   font-size: 100px;
 }
 
-/* #logo {
-  font-size: 300%;
-  font-weight: bold;
-  cursor: pointer;
-} */
-
 #left {
   border: solid white 4px;
   border-left: none;
@@ -42,4 +36,10 @@ li {
 
 #full-name {
   color: white !important;
+}
+
+.random-buttons {
+  display: block;
+  margin: 0% auto;
+  margin-top: 3%;
 }
