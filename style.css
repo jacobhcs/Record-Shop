@@ -77,3 +77,8 @@ li {
   margin-top: 10px;
   font-size: 14px;
 }
+
+#app img {
+  width: 400px;
+  height: 400px;
+}

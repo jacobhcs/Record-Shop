@@ -4,7 +4,7 @@ const apiUrl = 'http://ws.audioscrobbler.com/2.0/';
 // Function to fetch a random album from Last.fm
 async function fetchRandomAlbum() {
     const method = 'tag.gettopalbums';
-    const tag = 'rock'; // You can change the tag or genre as needed
+    const tag = 'rap'; // You can change the tag or genre as needed
 
     const params = new URLSearchParams({
         method,
@@ -32,7 +32,7 @@ function displayAlbum(album) {
     albumElement.classList.add('album');
 
     const albumImage = document.createElement('img');
-    albumImage.src = album.image[2]['#text']; // Use a suitable image size
+    albumImage.src = album.image[3]['#text']; // Use a suitable image size
     albumElement.appendChild(albumImage);
 
     const albumName = document.createElement('p');
@@ -57,3 +57,7 @@ document.getElementById('loadButton').addEventListener('click', onButtonClick);
 
 // Initial load
 onButtonClick();
+
+// last fm api link to top rock albums: https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=rock&api_key=2b6ce072acd8fb5f6e5be70ad405ea49&format=json
+
+// shared secret key: 4359699d2d6dbeee73531e0950888373
