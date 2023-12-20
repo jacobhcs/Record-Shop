@@ -43,3 +43,37 @@ li {
   margin: 0% auto;
   margin-top: 3%;
 }
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+} */
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.album {
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+  margin: 0% auto;
+  padding: 10px;
+  text-align: center;
+  /* background-color: #fff; */
+}
+
+.album img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.album p {
+  margin-top: 10px;
+  font-size: 14px;
+}
