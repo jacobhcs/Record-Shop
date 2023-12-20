@@ -24,7 +24,7 @@
             <li class="m-1">about</li>
             <li class="m-1">contact</li>
             <li class="m-1">profile</li>
-            <li class="m-1">random</li>
+            <li class="m-1">?</li>
           </ul>
         </div>
         <!-- settings icon -->
@@ -49,17 +49,27 @@
         <!-- randomizer content -->
         <div class="row h-100 d-flex justify-content-center mb-5">
           <div class="text-center text-light">
+            <select class="form-select w-25 text-center" name="genre" id="genre">
+              <option value="all">True Random</option>
+              <option value="rock">Rock</option>
+              <option value="jazz">Jazz</option>
+              <option value="hip-hop">Hip-Hop</option>
+              <option value="rap">Rap</option>
+              <option value="disco">Disco</option>
+              <option value="metal">Metal</option>
+              <option value="electronic">Electronic</option>
+              <option value="bossa nova">Bossa Nova</option>
+              <option value="country">Country</option>
+              <option value="classical">Classical</option>
+            </select>
             <div id="app">
               <!-- inner html content displays here -->
-          </div>
-          <button id="loadButton" class="btn btn-light">randomize</button>
-            <!-- <img id="album-mystery" class="my-5" src="./static/cover-1.png" alt="album cover" height="350">
-            <h4>LONG.LIVE.A$AP</h4>
-            <h5>A$AP Rocky</h5>
-            <button class="random-buttons btn btn-light d-block">randomize</button> -->
+            </div>
+            <button id="loadButton" class="btn btn-light">randomize</button>
             <button class="random-buttons btn btn-light d-block">add to cart</button>
             <div class="spotify mt-5">
-              <p class="d-inline">utilizing <a target="_blank" class="text-light" href="https://developer.spotify.com/documentation/web-api">last fm web api</a></p>
+              <p class="d-inline">utilizing <a target="_blank" class="text-light"
+                  href="https://developer.spotify.com/documentation/web-api">last fm web api</a></p>
               <img class="" src="./static/lastfm-logo.png" alt="spotify logo" height="40">
             </div>
           </div>

@@ -44,13 +44,6 @@ li {
   margin-top: 3%;
 }
 
-/* body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-} */
-
 #app {
   display: flex;
   justify-content: center;
@@ -58,13 +51,14 @@ li {
   /* height: 100vh; */
 }
 
-.album {
-  /* border: 1px solid #ccc; */
-  /* border-radius: 5px; */
+.album, #genre {
   margin: 0% auto;
   padding: 10px;
   text-align: center;
-  /* background-color: #fff; */
+}
+
+#genre {
+  margin-bottom: 20px;
 }
 
 .album img {
@@ -81,4 +75,9 @@ li {
 #app img {
   width: 400px;
   height: 400px;
+}
+
+#app p {
+  font-weight: 600;
+  font-size: 25px;
 }
