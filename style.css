@@ -77,6 +77,12 @@ li {
   height: 400px;
 }
 
+.animate {
+  position: relative;
+  bottom: 10px;
+  /* transition: ease-in-out; */
+}
+
 #app p {
   font-weight: 600;
   font-size: 25px;

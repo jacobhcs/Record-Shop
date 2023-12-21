@@ -54,24 +54,13 @@ function displayAlbum(album) {
   const appElement = document.getElementById('app');
 
   // Clear existing content
-  appElement.innerHTML = '';
-
-  const albumElement = document.createElement('div');
-  albumElement.classList.add('album');
-
-  const albumImage = document.createElement('img');
-  albumImage.src = album.image[3]['#text'];
-  albumElement.appendChild(albumImage);
-
-  const albumName = document.createElement('p');
-  albumName.textContent = album.name;
-  albumElement.appendChild(albumName);
-
-  const artistName = document.createElement('p');
-  artistName.textContent = album.artist.name;
-  albumElement.appendChild(artistName);
-
-  appElement.appendChild(albumElement);
+  appElement.innerHTML = `
+    <div class="album">
+    <img src="${album.image[3]['#text']}">
+      <p>${album.name}</p>
+      <p>${album.artist.name}</p>
+    </div>
+    `
 }
 
 // Function to handle button click
@@ -85,6 +74,13 @@ document.getElementById('loadButton').addEventListener('click', onButtonClick);
 
 // Initial load
 onButtonClick();
+
+// add some animation to album cover so when cursor is over the image it moves the image up.
+var albumCover = document.querySelector('.album-cover')
+
+albumCover.addEventListener('mouseover', function () {
+  classList.add('animate');
+});
 
 // last fm api link to top rock albums: https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=rock&api_key=2b6ce072acd8fb5f6e5be70ad405ea49&format=json
 
