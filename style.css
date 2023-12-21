@@ -87,3 +87,23 @@ li {
   font-weight: 600;
   font-size: 25px;
 }
+
+#quest {
+  font-weight: bolder;
+  width: 100%;
+}
+
+#cover:hover {
+  transform: translateY(-10px);
+}
+
+#cover {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.tribe {
+  font-size: 13.8px;
+}

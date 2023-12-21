@@ -26,12 +26,12 @@ async function fetchRandomAlbum() {
 
 // Function to display the random album.
 function displayAlbum(album) {
-  const appElement = document.getElementById('app');
+  const appElement = document.querySelector('#app');
 
-  // Clear existing content
+  // Using innerHTML to add HTML inside of #app element.
   appElement.innerHTML = `
     <div class="album">
-    <img src="${album.image[3]['#text']}">
+    <img id="cover" src="${album.image[3]['#text']}">
       <p>${album.name}</p>
       <p>${album.artist.name}</p>
     </div>
@@ -44,18 +44,11 @@ async function onButtonClick() {
   displayAlbum(randomAlbum);
 }
 
-// Attach the onButtonClick function to a button click event
-document.getElementById('loadButton').addEventListener('click', onButtonClick);
+// Using event listener to let button run function that displays image on click.
+document.querySelector('#loadButton').addEventListener('click', onButtonClick);
 
-// Initial load
+// Will run the onButtonClick funtion on inital page load, so that you dont need to click randomize first to see a displayed album.
 onButtonClick();
-
-// add some animation to album cover so when cursor is over the image it moves the image up.
-var albumCover = document.querySelector('.album-cover')
-
-albumCover.addEventListener('mouseover', function () {
-  classList.add('animate');
-});
 
 // last fm api link to top rock albums: https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=rock&api_key=2b6ce072acd8fb5f6e5be70ad405ea49&format=json
 
