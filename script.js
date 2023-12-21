@@ -25,31 +25,6 @@ async function fetchRandomAlbum() {
 }
 
 // Function to display the random album.
-// function displayAlbum(album) {
-//   const appElement = document.getElementById('app');
-
-//   // Clear existing content
-//   appElement.innerHTML = '';
-
-//   const albumElement = document.createElement('div');
-//   albumElement.classList.add('album');
-
-//   const albumImage = document.createElement('img');
-//   albumImage.src = album.image[3]['#text'];
-//   albumElement.appendChild(albumImage);
-
-//   const albumName = document.createElement('p');
-//   albumName.textContent = album.name;
-//   albumElement.appendChild(albumName);
-
-//   const artistName = document.createElement('p');
-//   artistName.textContent = album.artist.name;
-//   albumElement.appendChild(artistName);
-
-//   appElement.appendChild(albumElement);
-// }
-
-// Using HTML dom structure instead of a bunch of built-in methods.
 function displayAlbum(album) {
   const appElement = document.getElementById('app');
 
