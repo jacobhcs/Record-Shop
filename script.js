@@ -1,7 +1,7 @@
 // API key identifies user to and allows access to API. last fm does not require authentication.
 const apiKey = '2b6ce072acd8fb5f6e5be70ad405ea49';
 // The last fm api endpoint address
-const apiUrl = 'http://ws.audioscrobbler.com/2.0/';
+const apiUrl = 'https://ws.audioscrobbler.com/2.0/';
 // Grabbing select element to give choice of genre when randomizing album.
 let select = document.querySelector('#genre');
 
