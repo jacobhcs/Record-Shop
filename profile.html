@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vi/null | ?</title>
+  <title>vi/null | profile</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -24,8 +24,8 @@
             <li class="m-2"><a class="text-decoration-none text-light" href="index.html">shop</a></li>
             <li class="m-2">about</li>
             <li class="m-2">contact</li>
-            <li class="m-2"><a class="text-decoration-none text-light" href="profile.html">profile</a></li>
-            <li id="quest" class="m-1 font-weight-bold"><b>?</b></li>
+            <li class="m-2"><b class="text-light font-weight-bold">profile</b></li>
+            <li class="m-2"><a class="text-decoration-none text-light" href="random.html">?</a></li>
           </ul>
         </div>
         <!-- settings icon -->
@@ -43,44 +43,26 @@
           <div class="row justify-content-center">
             <div class="col-10 text-center my-5 text-light">
               <!-- shop header text -->
-              <h1>?</h1>
+              <h1>profile</h1>
             </div>
           </div>
           <!-- randomizer content -->
-          <div class="row h-75 d-flex justify-content-center px-5 mb-5">
-            <div class="text-center text-light">
-              <select class="form-select w-25 text-center" name="genre" id="genre">
-                <option value="all">Random</option>
-                <option value="jazz">Jazz</option>
-                <option value="hip-hop">Hip-Hop</option>
-                <option value="classical">Classical</option>
-                <option value="rock">Rock</option>
-                <option value="rap">Rap</option>
-                <option value="pop">Pop</option>
-                <option value="rnb">RNB</option>
-                <option value="disco">Disco</option>
-                <option value="metal">Metal</option>
-                <option value="electronic">Electronic</option>
-                <option value="bossa nova">Bossa Nova</option>
-                <option value="country">Country</option>
-                <option value="alternative">Alternative</option>
-                <option value="kpop">KPop</option>
-                <option value="indie">Indie</option>
-                <option value="house">House</option>
-              </select>
-              <div id="app">
-                <!-- inner html content displays here -->
-              </div>
-              <button id="loadButton" class="btn btn-outline-light">randomize</button>
-              <button class="random-buttons btn btn-outline-light d-block">add to cart</button>
-              <div class="spotify mt-5">
-                <p class="d-inline">utilizing <a target="_blank" class="text-light"
-                    href="https://www.last.fm/api">last.fm
-                    web api</a></p>
-                <img class="" src="./static/lastfm-logo.png" alt="spotify logo" height="40">
-              </div>
-            </div>
-          </div>
+         <div class="profile-con d-flex justify-content-center align-items-center m">
+           <div class="login">
+             <div class="form-floating mb-3">
+              <input class="form-control" type="text" name="user" id="user" placeholder="username">
+              <label for="user">username</label>
+             </div>
+             <div class="form-floating mb-3">
+              <input class="form-control" type="text" name="user" id="pass" placeholder="password">
+              <label for="pass">Password</label>
+             </div>
+             <div class="log-reg">
+               <button class="btn btn-outline-success d-block mx-auto mb-1">login</button>
+               <button class="btn btn-outline-success d-block mx-auto">register</button>
+             </div>
+           </div>
+         </div>
         </div>
       </div>
     </div>
