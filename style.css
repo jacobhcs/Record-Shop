@@ -4,13 +4,37 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+body {
+  margin-top: 100px !important;
+}
+
 #main {
   height: 100% !important;
 }
 
 h1 {
-  cursor: pointer;
   font-size: 100px;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#cart {
+  text-decoration: none;
+}
+
+/* #cart-num {
+  background-color: rgba(255, 255, 255, 0.979);
+  color: black;
+  border-radius: 50%;
+  padding: 1px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+#cart:hover {
+  opacity: .7;
 }
 
 #left {
@@ -20,12 +44,29 @@ h1 {
   border-top: none;
 }
 
+.rand-right {
+  height: 1013px;
+}
+
 li {
   cursor: pointer;
 }
 
+/* #navlist {
+  position: fixed;
+} */
+
+li:hover {
+  opacity: .7;
+}
+
 #settings-icon {
   cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+#settings-icon:hover {
+  transform: rotate(320deg);
 }
 
 #settings-box {
@@ -51,7 +92,8 @@ li {
   /* height: 100vh; */
 }
 
-.album, #genre {
+.album,
+#genre {
   margin: 0% auto;
   padding: 10px;
   text-align: center;
@@ -102,8 +144,27 @@ li {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 .tribe {
-  font-size: 13.8px;
+  font-size: 80%;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: rgb(20, 20, 20);
+}
+
+.fa {
+  /* padding: 20px; */
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }

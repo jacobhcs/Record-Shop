@@ -8,22 +8,23 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="bg-black">
   <!-- main content container -->
-  <div id="main" class="container my-5">
+  <div id="main" class="container ">
     <div class="row">
       <!-- side navigation bar : left side -->
       <div id="left" class="col-3 border-right border-light">
         <h1 class="text-center text-light">vi/null</h1>
         <!-- navigation links using list -->
         <div class="h-25 d-flex justify-content-center align-items-center">
-          <ul class="text-center list-unstyled text-light">
-            <li class="m-1"><a class="text-decoration-none text-light" href="index.html">shop</a></li>
-            <li class="m-1">about</li>
-            <li class="m-1">contact</li>
-            <li class="m-1">profile</li>
+          <ul id="navlist" class="text-center list-unstyled text-light">
+            <li class="m-2"><a class="text-decoration-none text-light" href="index.html">shop</a></li>
+            <li class="m-2">about</li>
+            <li class="m-2">contact</li>
+            <li class="m-2">profile</li>
             <li id="quest" class="m-1 font-weight-bold">?</li>
           </ul>
         </div>
@@ -33,56 +34,67 @@
         </div>
       </div>
       <!-- main store content container : right side -->
-      <div id="right" class="col-9">
+      <div id="right" class="rand-right col-9">
         <div class="row justify-content-end">
           <div class="col-2 text-end text-light">
             <!-- checkout cart -->
-            <p><a class="text-light" href="checkout.html">cart:</a> 0</p>
+            <p><a id="cart" class="text-light" href="checkout.html">cart:</a> <span id="cart-num">0</span></p>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10 text-center my-5 text-light">
-            <!-- shop header text -->
-            <h1>?</h1>
-          </div>
-        </div>
-        <!-- randomizer content -->
-        <div class="row h-100 d-flex justify-content-center mb-5">
-          <div class="text-center text-light">
-            <select class="form-select w-25 text-center" name="genre" id="genre">
-              <option value="all">Random</option>
-              <option value="jazz">Jazz</option>
-              <option value="hip-hop">Hip-Hop</option>
-              <option value="classical">Classical</option>
-              <option value="rock">Rock</option>
-              <option value="rap">Rap</option>
-              <option value="pop">Pop</option>
-              <option value="rnb">RNB</option>
-              <option value="disco">Disco</option>
-              <option value="metal">Metal</option>
-              <option value="electronic">Electronic</option>
-              <option value="bossa nova">Bossa Nova</option>
-              <option value="country">Country</option>
-              <option value="alternative">Alternative</option>
-              <option value="kpop">KPop</option>
-              <option value="indie">Indie</option>
-              <option value="house">House</option>
-            </select>
-            <div id="app">
-              <!-- inner html content displays here -->
+          <div class="row justify-content-center">
+            <div class="col-10 text-center my-5 text-light">
+              <!-- shop header text -->
+              <h1>?</h1>
             </div>
-            <button id="loadButton" class="btn btn-light">randomize</button>
-            <button class="random-buttons btn btn-light d-block">add to cart</button>
-            <div class="spotify mt-5">
-              <p class="d-inline">utilizing <a target="_blank" class="text-light"
-                  href="https://www.last.fm/api">last.fm web api</a></p>
-              <img class="" src="./static/lastfm-logo.png" alt="spotify logo" height="40">
+          </div>
+          <!-- randomizer content -->
+          <div class="row h-75 d-flex justify-content-center mb-5">
+            <div class="text-center text-light">
+              <select class="form-select w-25 text-center" name="genre" id="genre">
+                <option value="all">Random</option>
+                <option value="jazz">Jazz</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="classical">Classical</option>
+                <option value="rock">Rock</option>
+                <option value="rap">Rap</option>
+                <option value="pop">Pop</option>
+                <option value="rnb">RNB</option>
+                <option value="disco">Disco</option>
+                <option value="metal">Metal</option>
+                <option value="electronic">Electronic</option>
+                <option value="bossa nova">Bossa Nova</option>
+                <option value="country">Country</option>
+                <option value="alternative">Alternative</option>
+                <option value="kpop">KPop</option>
+                <option value="indie">Indie</option>
+                <option value="house">House</option>
+              </select>
+              <div id="app">
+                <!-- inner html content displays here -->
+              </div>
+              <button id="loadButton" class="btn btn-outline-light">randomize</button>
+              <button class="random-buttons btn btn-outline-light d-block">add to cart</button>
+              <div class="spotify mt-5">
+                <p class="d-inline">utilizing <a target="_blank" class="text-light"
+                    href="https://www.last.fm/api">last.fm
+                    web api</a></p>
+                <img class="" src="./static/lastfm-logo.png" alt="spotify logo" height="40">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <div class="col-md-4 mx-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-body-light text-light">vi/null © 2023 Company, Inc</span>
+    </div>
+    <div class="nav col-md-4 justify-content-end list-unstyled d-flex mx-4">
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </div>
+  </footer>
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
